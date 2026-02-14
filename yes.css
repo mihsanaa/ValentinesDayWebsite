@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background-color: #cbe6ef;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.header_text {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-top: 40px;
+}
+
+/* GIF */
+.gif_container {
+  margin-top: 20px;
+}
+
+.celebration_gif {
+  width: 500px;
+}
+
+/* GALLERY */
+.gallery {
+  width: 80%;
+  overflow: visible; /* biar hover nggak kepotong */
+  margin-top: 50px;
+  padding: 30px 0; /* kasih ruang atas bawah */
+}
+
+.gallery-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.gallery-track img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 20px;
+  border-radius: 20px;
+  border: 4px solid whitesmoke;
+  box-shadow: 0px 0px 25px rgba(255, 105, 180, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.gallery-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Caption */
+.caption {
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: white;
+  opacity: 0.8;
+}
